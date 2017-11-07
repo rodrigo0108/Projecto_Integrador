@@ -82,11 +82,11 @@
          
 		 <br>
 		 <br>
-          <form  method="post" action="success" >
+          <form  method='post'>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Nombre de usuario</label>
-                <input type="text" class="form-control" placeholder="Nombre de usuario" id="name">
+                <input type="text" class="form-control" placeholder="Nombre de usuario" name="username">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -94,13 +94,16 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Contraseña</label>
-                <input type="password" class="form-control" placeholder="Contraseña" id="email">
+                <input type="password" class="form-control" placeholder="Contraseña"name="password">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
 			<br>
-            <br>
-
+            
+            <div class="list-inline text-center" style="color: red">
+              <p>${error}</p>
+            </div>
+			<br>
             <div class="list-inline text-center">
              <button type="submit" class="btn btn-secondary" >Ingresar</button>
             </div>
